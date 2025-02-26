@@ -1,0 +1,13 @@
+go 1.21
+
+use (
+	.
+	core/log
+	core/date
+	core/yorm
+	core/timing
+	core/file
+	./core
+	core/yorm/mysql
+	core/frame
+)

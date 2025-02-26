@@ -1,0 +1,7 @@
+{
+  "listing_port": "55520",
+  "rcon_port": "32211",
+  "rcon_password": "86SZc7ZKCDbn",
+  "database": "squad",
+  "log_path": "./squad_server/SquadGame/Saved/Logs/SquadGame.log"
+}
