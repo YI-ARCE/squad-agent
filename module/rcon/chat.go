@@ -18,7 +18,7 @@ func chatEvent(message ChatMessage) {
 		return
 	default:
 		switch strings.ToLower(message.Message) {
-		case `qd`:
+		case `qd`, `签到`:
 			if global.NowGameInfo.GameUserSign[message.Platform[`eosID`]] {
 				Send(2, 2, `AdminWarn `+message.Platform[`eosID`]+` 本局已签到`)
 				return
@@ -50,7 +50,7 @@ func chatEvent(message ChatMessage) {
 					}
 				}
 			}
-		case `OP`, `op`:
+		case `op`:
 			if date.Date().Unix()-global.NowGameInfo.OpBroadcastTime > 5 {
 				str := `当前在线OP:` + "\n"
 				index := 0
